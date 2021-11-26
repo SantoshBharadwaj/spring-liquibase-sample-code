@@ -1,0 +1,17 @@
+<databaseChangeLog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+    <include file="/release_scripts/release-1.xml" />
+    
+    <include file="/release_scripts/release-2.xml" />
+    
+     <!-- TRY IT OUT YOURSELF: Alter the USER table created in the first release by adding a new column called AGE. -->
+     <!-- SOLUTION : <include file="/release_scripts/release-3.xml" /> -->
+    
+    <!-- (NOTE) You can keep adding xml files like above based on releases/any strategy which you think suits your project better.
+    	 Liquibase keeps track of what were executed during each release (You can read more about it on their official website).
+    	 Through this, we can say we have achieved version control for database.
+     -->
+ </databaseChangeLog>
