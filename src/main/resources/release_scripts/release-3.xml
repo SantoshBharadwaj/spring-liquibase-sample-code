@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+	<changeSet id="RELEASE-3-USER_TABLE_MODIFICATION"
+		author="DEV">
+		<preConditions onFail="MARK_RAN">
+			<tableExists tableName="USER" />
+		</preConditions>
+		<sql>
+			ALTER TABLE USER ADD COLUMN AGE INT NOT NULL;
+		</sql>
+	</changeSet>
+</databaseChangeLog>
